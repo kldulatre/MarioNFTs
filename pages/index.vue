@@ -1,12 +1,12 @@
 <template>
 	<div class="body min-h-screen text-white flex flex-col">
-		<div class="container mx-auto space-y-8 sm:space-y-24">
+		<div class="container mx-auto space-y-12 sm:space-y-24">
 			<NavBar />
 			<LandingPage />
-			<!-- <About /> -->
+			<About />
 			<Features />
 			<!-- <Carousel/> -->
-			<!-- <Enemies/> -->
+			<Enemies/>
 			<!-- <Partners/> -->
 		</div>
 		<!-- <Community /> -->

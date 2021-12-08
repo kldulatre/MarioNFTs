@@ -13,7 +13,7 @@
 			</div>
 			<YellowButton v-bind:data="'Open App'" />
 		</div>
-		<div class="flex flex-col items-center space-y-3 py-4 shadow-md border-b border-opacity-10 sm:hidden">
+		<div class="flex flex-col items-center space-y-3 py-4 border-b border-opacity-10 sm:hidden">
 			<div class="font-bold text-4xl">MARIO</div>
 			<div>
 				<ul class="flex flex-row uppercase space-x-4 text-xs">

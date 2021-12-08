@@ -1,5 +1,5 @@
 <template>
-	<div class="font-medium">{{ data }}</div>
+	<div class="sm:font-medium font-normal">{{ data }}</div>
 </template>
 
 <script>

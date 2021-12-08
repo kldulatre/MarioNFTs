@@ -3,7 +3,7 @@
 		<div class="sm:w-1/2 sm:space-y-12 space-y-6 w-full sm:flex-none flex flex-col items-center sm:items-start">
 			<div class="uppercase text-xl sm:font-semibold">Super Mario Metaverse</div>
 			<div class="sm:text-8xl sm:font-bold sm:w-100 text-6xl font-bold text-center sm:text-left">Collect and Play Mario</div>
-			<div class="sm:text-xl sm:w-100 inline-block text-center sm:text-left text-base w-4/5">
+			<div class="sm:text-xl sm:w-100 inline-block text-center sm:text-left text-base px-3 sm:px-0">
 				<span>Team up for a paws-itively adorable adventure and Unique NFT Collectibles Game for Mario lovers!</span>
 			</div>
 			<div class="space-x-2 flex">
