@@ -1,23 +1,54 @@
 <template>
-	<div class="flex items-center">
-		<div class="left w-1/2 space-y-12">
-			<div class="uppercase text-xl font-semibold">Super Mario Metaverse</div>
-			<div class="text-8xl font-bold w-100">Collect and Play Mario</div>
-			<div class="text-xl w-100">Team up for a paws-itively adorable adventure and Unique NFT Collectibles Game for Mario lovers!</div>
+	<div class="flex items-center flex-col-reverse sm:flex-row">
+		<div class="sm:w-1/2 sm:space-y-12 space-y-6 w-full sm:flex-none flex flex-col items-center sm:items-start">
+			<div class="uppercase text-xl sm:font-semibold">Super Mario Metaverse</div>
+			<div class="sm:text-8xl sm:font-bold sm:w-100 text-6xl font-bold text-center sm:text-left">Collect and Play Mario</div>
+			<div class="sm:text-xl sm:w-100 inline-block text-center sm:text-left text-base w-4/5">
+				<span>Team up for a paws-itively adorable adventure and Unique NFT Collectibles Game for Mario lovers!</span>
+			</div>
 			<div class="space-x-2 flex">
 				<YellowButton v-bind:data="'Learn More'" />
-				<button class="uppercase py-2 px-6 rounded-md yellow-font">How It Works</button>
+				<button class="uppercase sm:py-2 py-1 sm:px-6 px-2 rounded-md yellow-font sm:text-base text-sm">How It Works</button>
 			</div>
 		</div>
-		<div class="right w-1/2 relative">
+		<div class="sm:right sm:w-1/2 relative w-11/12">
 			<img class="z-1" src="/images/mario1.png" alt="" />
-			<div class="absolute bottom-0 right-0 p-6 my-16 border border-opacity-25 border-white rounded-lg shadow-2xl red-bg-1 w-96 space-y-8">
+			<div
+				class="
+					sm:inline-block sm:absolute sm:bottom-0 sm:absolute sm:bottom-0 sm:right-0 sm:p-6 sm:my-16 sm:w-96 sm:space-y-8
+					absolute
+					bottom-14
+					right-0
+					mr-4
+					p-4
+					border border-opacity-25 border-white
+					rounded-lg
+					sm:shadow-2xl
+					red-bg-1
+					w-3/5
+					space-y-2
+					shadow-2xl
+				"
+			>
 				<div class="flex justify-between items-center">
 					<div>
-						<div class="text-base opacity-70">#511</div>
-						<div class="text-2xl font-bold">Super Mario</div>
+						<div class="sm:text-base opacity-70 text-xs">#511</div>
+						<div class="sm:text-2xl font-bold text-lg">Super Mario</div>
 					</div>
-					<div class="p-2 w-14 h-14 rounded-full flex items-center justify-center red-bg-2 border border-opacity-25 border-white">
+					<div
+						class="
+							sm:p-2 sm:w-14 sm:h-14
+							w-8
+							h-8
+							p-1
+							rounded-full
+							flex
+							items-center
+							justify-center
+							red-bg-2
+							border border-opacity-25 border-white
+						"
+					>
 						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 							<path
 								stroke-linecap="round"
@@ -28,10 +59,25 @@
 						</svg>
 					</div>
 				</div>
-				<div class="flex space-x-2 text-xl font-semibold">
-					<div class="px-6 py-3 space-x-2 flex items-center rounded-full flex items-center justify-center red-bg-2 border border-opacity-25 border-white">
+				<div class="flex sm:space-x-2 sm:text-xl sm:font-semibold">
+					<div
+						class="
+							sm:px-6 sm:py-3 sm:space-x-2
+							px-2
+							py-1
+							space-x-1
+							flex
+							items-center
+							rounded-full
+							flex
+							items-center
+							justify-center
+							red-bg-2
+							border border-opacity-25 border-white
+						"
+					>
 						<div>
-							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<svg xmlns="http://www.w3.org/2000/svg" class="sm:h-6 sm:w-6 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 								<path
 									stroke-linecap="round"
 									stroke-linejoin="round"
@@ -40,11 +86,26 @@
 								/>
 							</svg>
 						</div>
-						<div>525K USD</div>
+						<div class="text-xs">525K USD</div>
 					</div>
-					<div class="px-6 py-2 space-x-2 flex items-center rounded-full flex items-center justify-center red-bg-2 border border-opacity-25 border-white">
+					<div
+						class="
+							sm:px-6 sm:py-2 sm:space-x-2
+							px-2
+							py-1
+							space-x-1
+							flex
+							items-center
+							rounded-full
+							flex
+							items-center
+							justify-center
+							red-bg-2
+							border border-opacity-25 border-white
+						"
+					>
 						<div>
-							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<svg xmlns="http://www.w3.org/2000/svg" class="sm:h-6 sm:w-6 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 								<path
 									stroke-linecap="round"
 									stroke-linejoin="round"
@@ -53,7 +114,7 @@
 								/>
 							</svg>
 						</div>
-						<div>845K</div>
+						<div class="text-xs">845K</div>
 					</div>
 				</div>
 			</div>
@@ -68,13 +129,18 @@
 .yellow-font {
 	color: #ffb400;
 }
-.w-100 {
-	width: 32rem;
+@media (min-width: 640px) {
+	.sm\:w-100 {
+		width: 32rem;
+	}
 }
 .red-bg-1 {
 	background-color: #e75353;
 }
 .red-bg-2 {
 	background-color: #c93535;
+}
+.h-100 {
+	height: 35rem;
 }
 </style>
