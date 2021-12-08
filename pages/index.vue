@@ -7,9 +7,9 @@
 			<Features />
 			<!-- <Carousel/> -->
 			<Enemies/>
-			<!-- <Partners/> -->
+			<Partners/>
 		</div>
-		<!-- <Community /> -->
+		<Community />
 		<Footer />
 		<Copyright/>
 	</div>

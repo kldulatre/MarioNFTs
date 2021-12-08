@@ -1,6 +1,6 @@
 <template>
 	<div class="relative mt-40">
-		<div class="z-1 w-full bg-green-100 background"></div>
+		<div class="z-1 w-full background"></div>
 		<div class="z-10 absolute bottom-0 w-full">
 			<div class="container mx-auto m-12">
 				<div class="flex items-end">

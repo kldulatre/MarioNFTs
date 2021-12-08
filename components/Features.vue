@@ -1,7 +1,7 @@
 <template>
-	<div class="flex flex-col justify-center items-center sm:space-y-8 space-y-4">
+	<div class="flex flex-col justify-center items-center sm:space-y-8 space-y-6">
 		<Header :data="'Features'" />
-		<div class="flex sm:space-x-4 justify-center sm:justify-start flex-wrap sm:flex-nowrap space-y-2 sm:space-y-0">
+		<div class="flex sm:space-x-4 justify-center sm:justify-start flex-wrap sm:flex-nowrap space-y-4 sm:space-y-0">
 			<div class="sm:w-1/3 w-4/5" v-for="item in data" :key="item.title">
 				<Card class="" :data="item" />
 			</div>
