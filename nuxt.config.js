@@ -14,7 +14,6 @@ export default {
   },
 
   ssr: false,
-  target: 'static',
 
   css: [
   ],
