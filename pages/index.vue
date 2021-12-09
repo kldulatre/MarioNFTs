@@ -5,7 +5,7 @@
 			<LandingPage />
 			<About />
 			<Features />
-			<!-- <Carousel/> -->
+			<Carousel/>
 			<Enemies/>
 			<Partners/>
 		</div>

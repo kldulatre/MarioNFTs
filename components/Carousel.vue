@@ -1,17 +1,21 @@
 <template>
-	<div class="flex flex-col items-center space-y-8">
+	<div class="flex flex-col items-center sm:space-y-8 space-y-4">
 		<Header :data="'Super Mario'"></Header>
 		<div>
-			<ul class="flex space-x-4">
-				<li class="py-2 px-6 border border-white border-opacity-50 rounded-full">All</li>
-				<li class="py-2 px-6 border border-white border-opacity-50 rounded-full">Generic</li>
-				<li class="py-2 px-6 border border-white border-opacity-50 rounded-full">Common</li>
-				<li class="py-2 px-6 border border-white border-opacity-50 rounded-full text-blue-400">Uncommon</li>
-				<li class="py-2 px-6 border border-white border-opacity-50 rounded-full text-blue-400">Rare</li>
-				<li class="py-2 px-6 border border-white border-opacity-50 rounded-full text-yellow-300">Legendary</li>
+			<ul class="flex space-x-1 sm:space-x-4 flex-wrap justify-center px-8">
+				<li class="sm:py-2 py-1 sm:px-6 px-4 mb-2 sm:text-base text-sm border border-white border-opacity-50 rounded-full">All</li>
+				<li class="sm:py-2 py-1 sm:px-6 px-4 mb-2 sm:text-base text-sm border border-white border-opacity-50 rounded-full">Generic</li>
+				<li class="sm:py-2 py-1 sm:px-6 px-4 mb-2 sm:text-base text-sm border border-white border-opacity-50 rounded-full">Common</li>
+				<li class="sm:py-2 py-1 sm:px-6 px-4 mb-2 sm:text-base text-sm border border-white border-opacity-50 rounded-full text-blue-400">
+					Uncommon
+				</li>
+				<li class="sm:py-2 py-1 sm:px-6 px-4 mb-2 sm:text-base text-sm border border-white border-opacity-50 rounded-full text-blue-400">Rare</li>
+				<li class="sm:py-2 py-1 sm:px-6 px-4 mb-2 sm:text-base text-sm border border-white border-opacity-50 rounded-full text-yellow-300">
+					Legendary
+				</li>
 			</ul>
 		</div>
-		<div class="container">
+		<div class="w-full sm:container">
 			<Flicking :options="{ align: 'center', circular: true }" :plugins="plugins">
 				<NFTCard />
 				<NFTCard />
@@ -46,28 +50,30 @@ export default {
 	},
 	data() {
 		return {
-			plugins: [new Fade(), new Arrow(), new Pagination({ type: "scroll"})],
+			plugins: [new Fade(), new Arrow(), new Pagination({ type: "scroll" })],
 		};
 	},
 };
 </script>
 
 <style scoped>
-.container {
-	max-width: 70rem;
-}
 .bottomest {
 	bottom: 0px;
 	z-index: 100;
 }
 .flicking-pagination-bullet {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  margin: 0 4px;
-  border-radius: 50%;
-  background-color: rgb(10 10 10 / 10%);
-  cursor: pointer;
-  font-size: 10rem;
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin: 0 4px;
+	border-radius: 50%;
+	background-color: rgb(10 10 10 / 10%);
+	cursor: pointer;
+	font-size: 10rem;
+}
+@media (min-width: 640px) {
+	.sm\:container {
+		max-width: 70rem;
+	}
 }
 </style>

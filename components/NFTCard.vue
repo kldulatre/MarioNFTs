@@ -1,7 +1,7 @@
 <template>
-	<div class="card-panel border border-white border-opacity-50 p-4 mx-2 mb-10 rounded-2xl relative background h-30 overflow-hidden">
-		<div class="rounded-full border border-white flex-0 absolute top-0 left-0 m-4 py-2 px-3 text-sm highlight">Legendary</div>
-		<img class="w-96 h-96 contain" src="marios/Dr_Mario_DMW.png" alt="" />
+	<div class="card-panel border border-white border-opacity-50 p-4 mx-2 mb-10 rounded-2xl relative background sm:h-30 h-96 overflow-hidden">
+		<div class="rounded-full border border-white flex-0 absolute top-0 left-0 m-4 sm:py-2 py-1 sm:px-3 px-2 sm:text-sm text-xs highlight">Legendary</div>
+		<img class="sm:w-96 w-60 sm:h-96 h-60 contain" src="marios/Dr_Mario_DMW.png" alt="" />
 		<div class="w-full absolute bottom-0 left-0 highlight p-4 space-y-4">
 			<div class="flex justify-between">
 				<div>
@@ -17,10 +17,13 @@
 				<div class="flex space-x-2">
 					<div
 						class="
-							px-4
+							sm:px-4
+							sm:py-1
+							sm:space-x-2
+							px-2
 							py-1
+							space-x-1
 							background
-							space-x-2
 							flex
 							items-center
 							rounded-full
@@ -28,10 +31,11 @@
 							items-center
 							justify-center
 							border border-opacity-25 border-white
+							text-sm
 						"
 					>
 						<div>
-							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<svg xmlns="http://www.w3.org/2000/svg" class="sm:h-6 sm:w-6 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 								<path
 									stroke-linecap="round"
 									stroke-linejoin="round"
@@ -44,10 +48,13 @@
 					</div>
 					<div
 						class="
-							px-4
+							sm:px-4
+							sm:py-1
+							sm:space-x-2
+							px-2
 							py-1
+							space-x-1
 							background
-							space-x-2
 							flex
 							items-center
 							rounded-full
@@ -55,10 +62,11 @@
 							items-center
 							justify-center
 							border border-opacity-25 border-white
+							text-sm
 						"
 					>
 						<div>
-							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<svg xmlns="http://www.w3.org/2000/svg" class="sm:h-6 sm:w-6 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 								<path
 									stroke-linecap="round"
 									stroke-linejoin="round"
@@ -71,8 +79,8 @@
 					</div>
 				</div>
 				<div>
-					<div class="p-2 w-10 h-10 rounded-full flex items-center justify-center background border border-opacity-25 border-white">
-						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+					<div class="sm:p-2 sm:w-10 sm:h-10 h-8 w-8 rounded-full flex items-center justify-center background border border-opacity-25 border-white">
+						<svg xmlns="http://www.w3.org/2000/svg" class="sm:h-6 sm:w-6 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 							<path
 								stroke-linecap="round"
 								stroke-linejoin="round"
@@ -101,7 +109,9 @@ export default {};
 .highlight {
 	background-color: #c93535;
 }
-.h-30 {
-	height: 30rem;
+@media (min-width: 640px) {
+	.sm\:h-30 {
+		height: 30rem;
+	}
 }
 </style>

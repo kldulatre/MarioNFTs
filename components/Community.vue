@@ -15,7 +15,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="sm:hidden background2 flex flex-col items-center space-y-4 py-8 mt-16">
+		<div class="sm:hidden background2 flex flex-col items-center space-y-4 py-8 px-8 mt-16">
 			<Header class="text-center" :data="'Join Our Community'" />
 			<img class="object-contain h-60" src="images/community.png" alt="community" />
 			<SubBody class="text-center" :data="'Be part of our data amazing community and stay tuned for the news.'" />
