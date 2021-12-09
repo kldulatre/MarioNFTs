@@ -40,11 +40,23 @@
 <script>
 import { Flicking } from "@egjs/vue-flicking";
 import { Fade, Arrow, Pagination } from "@egjs/flicking-plugins";
-import "@egjs/vue-flicking/dist/flicking.css";
-import "@egjs/flicking-plugins/dist/arrow.css";
-import "@egjs/flicking-plugins/dist/pagination.css";
+// import "@egjs/vue-flicking/dist/flicking.css";
+// import "@egjs/flicking-plugins/dist/arrow.css";
+// import "@egjs/flicking-plugins/dist/pagination.css";
 
 export default {
+	head: {
+		link: [
+			{
+				rel: "stylesheet",
+				href: "https://cdnjs.cloudflare.com/ajax/libs/egjs-flicking/4.4.1/flicking.css",
+			},
+			{
+				rel: "stylesheet",
+				href: "https://naver.github.io/egjs-flicking-plugins/release/latest/dist/flicking-plugins.css",
+			},
+		],
+	},
 	components: {
 		Flicking: Flicking,
 	},
